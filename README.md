@@ -309,7 +309,7 @@ Cuando haya funcionado, verás los valores dentro del monitor serial y la interf
 
 ![](https://github.com/DanielX834/PRACTICA-N9/blob/main/19.jpg?raw=true)
 
-![](https://github.com/DanielX834/PRACTICA-N9/blob/main/20.jpg?raw=true
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/20.jpg?raw=true)
 
 ![](https://github.com/DanielX834/PRACTICA-N9/blob/main/21.jpg?raw=true)
 
