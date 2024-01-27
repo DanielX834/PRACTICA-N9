@@ -207,5 +207,114 @@ Serial.println();
   -TRIG --> esp: 4
   -VCC --> 5V
 
+### Instrucciones de preparación del entorno en NodeRed
+
+Para ejecutar este flow, es necesario lo siguiente
+1. Arrancar el contenedor de NodeRed en **cmd** con el comando
+        
+        node-red
+
+2. Dirigirse a [localhost:1880](localhost:1880)
+
+3. En la parte izqierda de la pantalla seleccionaremos
+   - 1 mqtt in
+   - json
+   - 3 fuction
+   - 3 gauge
+   - 3 chart
+
+ ![](https://github.com/DanielX834/PRACTICA-N9/blob/main/3.jpg?raw=true)
+  
+4. Para la configuracion del mqtt in necesitaremos saber nuestra ip, que se saca de la siguiente manera:
+   cmd --> nslookup broker.hivemq.com --> copiamos los numeros de la parte que dice addresses --> nos dirigimos a nodered --> seleccionamos mqtt in --> damos click en el icono del lapiz --> en la parte de server se pegara la direccion ip que copiamos --> update --> done
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/4.jpg?raw=true)
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/5.jpg?raw=true)
+
+5. Colocar el bloque ```json``` y configurarlo el bloque con la acción de ```Always convert to JavaScript Object```  como se muestra en la imagen.
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/6.jpg?raw=true)
+
+6. Se colocaran tres function. En el primer function se colocara el mobre de **TEMPERATURA** y posteriormente se pondra el siguiente codigo
+
+```
+msg.payload = msg.payload.TEMPERATURA;
+msg.topic = "TEMPERATURA";
+return msg;
+```
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/7.jpg?raw=true)
+
+7.En el segundo fuction se llamara **HUMEDAD** e igualmente se colocara un codigo
+
+```
+msg.payload = msg.payload.HUMEDAD;
+msg.topic = "HUMEDAD";
+return msg;
+```
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/8.jpg?raw=true)
+
+8.En el tercer fuction se llamara **Distancia** e igualmente se colocara un codigo
+
+```
+msg.payload = msg.payload.DISTANCIA;
+msg.topic = "DISTANCIA";
+return msg;
+```
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/9.jpg?raw=true)
+
+9. Colocamos los bloques ```Chart``` y ```Guage``` a cada una de las funciones.
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/10.jpg?raw=true)
+
+10. Los que estan conectados a la funcion de temperatura los configuramos de la siguiente manera.
+
+*Gauge*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/11.jpg?raw=true)
+
+*Chart*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/12.jpg?raw=true)
+
+11. Los que estan conectados a la funcion de humedad los configuramos de esta manera.
+
+*Gauge*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/13.jpg?raw=true)
+
+*Chart*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/14.jpg?raw=true)
+
+12. Los que estan conectados a la funcion de Distancia los configuramos de esta manera.
+
+*Gauge*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/15.jpg?raw=true)
+
+*Chart*
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/16.jpg?raw=true)
+
+13. Por ultimo en la pestaña de de *Layout* crearemos otro tabulador llamado **Sensor DHT22**, dentro de el añadiremos dos grupos uno para los indicadores y otro para las graficas; de igual manera colocaremos dos espaciadores de temperatura y humedad, los pondremos segun sea el caso y la especificación.
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/17.jpg?raw=true)
+
+### Instrucciónes de operación
+1. Iniciar simulador en [WOKWI](https://https://wokwi.com/).
+2. Visualizar los datos en el monitor serial.
+3. Colocar la temperatura y humedad dando *doble click* al sensor **DHT22**
+4. Iniciar el simulador en [Node-RED](http://localhost:1880/) dando *click izquierdo* en el botón **Deploy** y despues abrir la interfaz dando *click izquierdo* en el boton de exportar.
+5. Visualizar la interfaz.
+
+## Resultados
+Cuando haya funcionado, verás los valores dentro del monitor serial y la interfaz como se muestra en las siguentes imagenes.
+
+![](
+
+![](
+
+![](
+
+# Créditos
+Desarrollado por Ing. Daniel Armenta
+
+
+
 
   
