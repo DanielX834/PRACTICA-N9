@@ -291,7 +291,7 @@ return msg;
 *Chart*
 ![](https://github.com/DanielX834/PRACTICA-N9/blob/main/16.jpg?raw=true)
 
-13. Por ultimo en la pestaña de de *Layout* crearemos otro tabulador llamado **Sensor DHT22**, dentro de el añadiremos dos grupos uno para los indicadores y otro para las graficas; de igual manera colocaremos dos espaciadores de temperatura y humedad, los pondremos segun sea el caso y la especificación.
+13. Por ultimo en la pestaña de de *Layout* crearemos otro tabulador llamado **Practica8**, dentro de el añadiremos dos grupos uno para los indicadores y otro para las graficas; de igual manera colocaremos dos espaciadores de temperatura y humedad, los pondremos segun sea el caso y la especificación.
 
 ![](https://github.com/DanielX834/PRACTICA-N9/blob/main/17.jpg?raw=true)
 
