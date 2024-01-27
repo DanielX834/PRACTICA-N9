@@ -305,11 +305,17 @@ return msg;
 ## Resultados
 Cuando haya funcionado, verás los valores dentro del monitor serial y la interfaz como se muestra en las siguentes imagenes.
 
-![](
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/18.jpg?raw=true)
 
-![](
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/19.jpg?raw=true)
 
-![](
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/20.jpg?raw=true
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/21.jpg?raw=true)
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/22.jpg?raw=true)
+
+![](https://github.com/DanielX834/PRACTICA-N9/blob/main/23.jpg?raw=true)
 
 # Créditos
 Desarrollado por Ing. Daniel Armenta
